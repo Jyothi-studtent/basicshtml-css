@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link type="text/css" href="bnow.css" rel="stylesheet">
+    
+<body>
+    <div class="content">
+        <h1>Place Your Order</h1><br>
+        <br>
+    </div>
+    <div class="form">
+        <form>
+            <br><br>
+            <labeL>Name:</labeL>
+            <input type="text" id="name" placeholder="Enter Your Name" required> 
+            <br><br>
+            <labeL>Contact No.:</labeL>
+            <input type="text" id="contactno" placeholder="+91 9999999999" required>
+            <br><br>
+            <label>Pickup Location:</label>
+            <input type="text" id="pickup" required>
+            <br><br>
+            <label>Date:</label>
+            <input type="date" id="date" required>
+            <br><br>
+            <label>Duration(With Cost):</label>
+            <select name="duration" id="qty[1]">
+                <option value="1000">1~5 days ₹1000</option>
+                <option value="4000">6~15 days ₹4000</option>
+                <option value="8000"> 16~30 days ₹8000</option>
+                <option value="20000">1~2 months ₹20000</option>
+            </select>
+            <br><br>
+            <label>Vehicle Class:</label> 
+            <select name="vehicle" id="qty[2]">
+                <option value="2000">Truck Capacity 1Tons</option>
+                <option value="5000">Truck Capacity 5Tons</option>
+                <option value="10000">Truck Capacity 10Tons</option>
+                <option value="20000">Truck Capacity 20Tons</option>
+            </select>
+            <br><br>
+            <label>Insurance Type:</label>
+            <select name="insurance" id="qty[3]">
+                <option value="500">Basic</option>
+                <option value="1500">Intermediate</option>
+                <option value="3000">Advance</option>
+                <option value="5000">Ultra</option>
+            </select>
+            <br><br>
+            <label>Total Cost:</label>
+            <input type="text" class="form-control" id="total_qty" name="Total Cost" placeholder="Hidden" autocomplete="off" onChange="sum()" /> 
+            <div id="buttons"><br>
+                <input type="Submit" name="Order" value="Order" onclick="notEmpty()">
+                <input type="Reset"><br><br>
+            </div>
+        </form>
+    </div>
+    <div id="foot">
+        <p><a href="home.html">Return To Home Page</a></p>
+    </div>    
+    <script src="bnow.js"></script>
+</head>
+</body>
+</html>

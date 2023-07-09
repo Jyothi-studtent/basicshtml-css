@@ -1,0 +1,79 @@
+.form{
+    position:relative;
+    display:flex;
+    left:550px;
+    
+}
+.content{
+    text-align: center;
+}
+label{
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 270px;
+    text-align: left;
+    font-size: 25px;
+    font-weight: bolder;
+    color:rgb(119, 40, 9);
+    opacity: 1.0;
+}
+label:hover{
+    background-color: grey;
+}
+#buttons{
+position: relative;
+top:20px;
+align-content: center;
+opacity: 1.0;
+text-align:center ;
+
+}
+#buttons input{
+    font-size: 25px;
+    font-weight: bolder;
+    height:40px;
+    border-radius: 30%;
+}
+#buttons input:hover{
+    background-color: grey;
+}
+
+
+input{
+    height:25px;
+    width:200px;
+}
+select{
+    height: 30px;
+    width:207px;
+    font-size: 20px;
+}
+    
+body{
+    background-image: url("pbg1.png") ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    overflow: hidden;
+    
+}
+h1{
+    font-size: 40px;
+    font-weight:bolder;
+}
+#foot{
+    align-items: center;
+    display:flex;
+    position:relative;
+    left:680px;
+    top:50px;
+}
+#foot a{
+    font-size: 25px;
+    color:black;
+}
+#foot a:hover{
+color:blue;
+}
